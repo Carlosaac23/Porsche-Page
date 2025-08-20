@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <div className='flex justify-between items-center p-7'>
       <a className='flex items-center gap-3' href='#home'>
-        <img className='w-14' src='/porsche.svg' alt='Porsche Logo' />
+        <img className='w-11' src='/porsche.svg' alt='Porsche Logo' />
         <span>Porsche</span>
       </a>
       <ul className='flex list-none gap-10 font-semibold text-lg'>
