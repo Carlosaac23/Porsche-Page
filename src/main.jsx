@@ -5,6 +5,8 @@ import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <main className='px-8 sm:px-80 sm:bg-red-400 md:bg-blue-400'>
+      <App />
+    </main>
   </React.StrictMode>
 );
