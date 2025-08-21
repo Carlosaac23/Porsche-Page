@@ -1,7 +1,7 @@
-import About from './components/About';
-import CarsSwiper from './components/cars-swiper/CarsSwiper';
-import Header from './components/Header';
-import Home from './components/Home';
+import About from './components/About/About';
+import CarsSwiper from './components/CarsSwiper/CarsSwiper';
+import Header from './components/Welcome/Header';
+import Home from './components/Welcome/Home';
 
 export default function App() {
   return (
