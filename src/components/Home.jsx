@@ -31,7 +31,7 @@ export default function Home() {
       </motion.div>
 
       <motion.img
-        className='w-60 xl:w-96 mb-8'
+        className='w-60 md:w-72 xl:w-96 mb-8'
         src='/home.webp'
         alt='Home Porsche image'
         initial={{ opacity: 0, x: -50 }}
