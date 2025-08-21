@@ -40,21 +40,36 @@ export default function Home() {
       />
 
       <ul className='w-full flex items-center justify-evenly'>
-        <li className='flex flex-col items-center gap-1 w-20'>
+        <motion.li
+          className='flex flex-col items-center gap-1 w-20'
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        >
           <ChevronUp size={20} color='#fafafa' />
           <span className='text-xs'>2,4s</span>
           <p className='text-sm'>Acceleration</p>
-        </li>
-        <li className='flex flex-col items-center gap-1 w-20'>
+        </motion.li>
+        <motion.li
+          className='flex flex-col items-center gap-1 w-20'
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        >
           <Gauge size={20} color='#fafafa' />
           <span className='text-xs'>260 km/h</span>
           <p className='text-sm'>Top Speed</p>
-        </li>
-        <li className='flex flex-col items-center gap-1 w-20'>
+        </motion.li>
+        <motion.li
+          className='flex flex-col items-center gap-1 w-20'
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+        >
           <Power size={20} color='#fafafa' />
           <span className='text-xs'>700 kw</span>
           <p className='text-sm'>Power</p>
-        </li>
+        </motion.li>
       </ul>
     </section>
   );
