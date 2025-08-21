@@ -50,7 +50,7 @@ export default function Header() {
         {isOpen && (
           <motion.div
             key='mobile-menu'
-            className='absolute top-0 right-0 left-0 bottom-0 bg-neutral-950 text-neutral-50 p-5 md:hidden'
+            className='fixed top-0 right-0 left-0 bottom-0 bg-neutral-950 text-neutral-50 p-5 z-100 md:hidden'
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
