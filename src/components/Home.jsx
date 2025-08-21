@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Zap, ChevronUp, Gauge, Power } from 'lucide-react';
+import { Zap, ChevronsUp, Gauge, Power } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -46,7 +46,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
         >
-          <ChevronUp size={20} color='#fafafa' />
+          <ChevronsUp size={20} color='#fafafa' />
           <span className='text-xs'>2,4s</span>
           <p className='text-sm'>Acceleration</p>
         </motion.li>
