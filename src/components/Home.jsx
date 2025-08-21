@@ -48,7 +48,7 @@ export default function Home() {
         >
           <ChevronsUp size={20} color='#fafafa' />
           <span className='text-xs'>2,4s</span>
-          <p className='text-sm'>Acceleration</p>
+          <p className='text-sm font-extralight'>Acceleration</p>
         </motion.li>
         <motion.li
           className='flex flex-col items-center gap-1 w-20'
@@ -58,7 +58,7 @@ export default function Home() {
         >
           <Gauge size={20} color='#fafafa' />
           <span className='text-xs'>260 km/h</span>
-          <p className='text-sm'>Top Speed</p>
+          <p className='text-sm font-extralight'>Top Speed</p>
         </motion.li>
         <motion.li
           className='flex flex-col items-center gap-1 w-20'
@@ -68,7 +68,7 @@ export default function Home() {
         >
           <Power size={20} color='#fafafa' />
           <span className='text-xs'>700 kw</span>
-          <p className='text-sm'>Power</p>
+          <p className='text-sm font-extralight'>Power</p>
         </motion.li>
       </ul>
     </section>
