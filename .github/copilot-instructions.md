@@ -1,1 +1,0 @@
-- Always use Bun for package manager
