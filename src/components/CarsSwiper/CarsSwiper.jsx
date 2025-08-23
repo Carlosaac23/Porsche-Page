@@ -20,7 +20,6 @@ export default function CarsSwiper() {
         pagination={{ clickable: true }}
         breakpoints={{
           0: { slidesPerView: 1 },
-          367: { slidesPerView: 1 },
           500: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
           1700: { slidesPerView: 4 },
@@ -40,6 +39,9 @@ export default function CarsSwiper() {
         </SwiperSlide>
         <SwiperSlide>
           <Card brand='Porsche' model='911 GT3' img='/popular5.webp' acceleration='3,4' topSpeed='318' fuelGas='64' price='300,400' />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Card brand='Porsche' model='Taycan GTS' img='/popular6.webp' acceleration='3,3' topSpeed='250' fuelGas='Electric' price='207,700' />
         </SwiperSlide>
       </Swiper>
     </section>
