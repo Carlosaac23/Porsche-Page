@@ -8,11 +8,13 @@ export default function CarsSwiper() {
   return (
     <section className='my-20' id='popular'>
       <Swiper
-        style={{
-          '--swiper-pagination-color': '#fafafa',
-          '--swiper-pagination-bullet-inactive-color': '#fafafa',
-          '--swiper-pagination-bullet-inactive-opacity': '0.2',
-        }}
+        style={
+          {
+            '--swiper-pagination-color': '#fafafa',
+            '--swiper-pagination-bullet-inactive-color': '#fafafa',
+            '--swiper-pagination-bullet-inactive-opacity': '0.2',
+          } as React.CSSProperties
+        }
         modules={[Pagination]}
         spaceBetween={60}
         slidesPerView={3}
