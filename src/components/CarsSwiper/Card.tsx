@@ -1,7 +1,16 @@
 import { ChevronsUp, Gauge, Fuel, Zap } from 'lucide-react';
-import PropTypes from 'prop-types';
 
-export default function Card({ brand, model, img, acceleration, topSpeed, fuelGas, price }) {
+type CardProps = {
+  brand: string;
+  model: string;
+  img: string;
+  acceleration: string;
+  topSpeed: string;
+  fuelGas: string;
+  price: string;
+};
+
+export default function Card({ brand, model, img, acceleration, topSpeed, fuelGas, price }: CardProps) {
   return (
     <div className='max-w-2xs flex flex-col items-center text-center p-5 mb-16 border border-neutral-800 rounded-lg hover:border-neutral-600 duration-200 ease-out cursor-pointer'>
       <h2 className='font-bold text-lg'>{brand}</h2>
@@ -34,13 +43,3 @@ export default function Card({ brand, model, img, acceleration, topSpeed, fuelGa
     </div>
   );
 }
-
-Card.propTypes = {
-  brand: PropTypes.string.isRequired,
-  model: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
-  acceleration: PropTypes.string.isRequired,
-  topSpeed: PropTypes.string.isRequired,
-  fuelGas: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-};
