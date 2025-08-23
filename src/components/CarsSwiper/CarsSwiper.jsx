@@ -1,20 +1,29 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import Card from './Card';
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 export default function CarsSwiper() {
   return (
-    <section id='popular' className='p-10'>
+    <section className='my-20' id='popular'>
       <Swiper
+        style={{
+          '--swiper-pagination-color': '#fafafa',
+          '--swiper-pagination-bullet-inactive-color': '#fafafa',
+          '--swiper-pagination-bullet-inactive-opacity': '0.2',
+        }}
+        modules={[Pagination]}
         spaceBetween={60}
         slidesPerView={3}
         loop={true}
+        pagination={{ clickable: true }}
         breakpoints={{
           0: { slidesPerView: 1 },
           367: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          500: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1700: { slidesPerView: 4 },
         }}
       >
         <SwiperSlide>
