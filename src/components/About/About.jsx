@@ -2,9 +2,9 @@ export default function About() {
   return (
     <section className='my-30 md:flex gap-14' id='about'>
       <div className='relative w-fit mb-20'>
-        <img className='w-xs sm:w-2xl h-auto object-cover rounded-lg' src='/interior.webp' alt='Interior Porsche Image' />
+        <img className='w-full h-auto object-cover rounded-lg' src='/interior.webp' alt='Interior Porsche Image' />
 
-        <div className='absolute -right-3 -bottom-5 md:-right-6 md:-bottom-6 p-4 backdrop-blur-sm bg-neutral-700/70 rounded-lg text-center'>
+        <div className='absolute -right-3 -bottom-5 md:-right-6 md:-bottom-6 p-4 backdrop-blur-xs bg-neutral-500/10 rounded-lg text-center'>
           <h3 className='font-bold'>1110 Nm</h3>
           <p className='text-sm font-light'>Up to 1110 Nm</p>
         </div>
