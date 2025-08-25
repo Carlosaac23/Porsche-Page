@@ -25,7 +25,7 @@ export default function Card({ brand, model, img, acceleration, topSpeed, fuelGa
           <span className='text-xs'>{topSpeed} Km/h</span>
           <Gauge size={14} color='#fafafa' />
         </li>
-        <li>
+        <div>
           {fuelGas.toLowerCase() === 'electric' ? (
             <li className='flex items-center gap-1'>
               <Zap size={14} color='#fafafa' />
@@ -37,7 +37,7 @@ export default function Card({ brand, model, img, acceleration, topSpeed, fuelGa
               <span className='text-xs'>{fuelGas} l</span>
             </li>
           )}
-        </li>
+        </div>
       </ul>
       <p className='text-sm font-bold'>USD {price}</p>
     </div>
