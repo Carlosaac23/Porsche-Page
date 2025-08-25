@@ -22,8 +22,9 @@ export default function CarsSwiper() {
         pagination={{ clickable: true }}
         breakpoints={{
           0: { slidesPerView: 1 },
-          500: { slidesPerView: 2 },
+          600: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
+          1536: { slidesPerView: 4 },
           1700: { slidesPerView: 4 },
         }}
       >
