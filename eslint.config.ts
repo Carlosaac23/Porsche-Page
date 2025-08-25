@@ -8,7 +8,7 @@ export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     plugins: { js },
-    extends: ['js/recommended'],
+    extends: ['react-app', 'react-app/jest'],
     languageOptions: { globals: globals.browser },
     rules: {
       'react/react-in-jsx-scope': 'off',
