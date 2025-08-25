@@ -18,8 +18,17 @@ export default function Header() {
   return (
     <header className='flex justify-between items-center py-8'>
       <a className='flex items-center gap-3' href='#home'>
-        <img className='w-9' src='/porsche.svg' alt='Porsche Logo' />
-        <span className='font-bold'>Porsche</span>
+        <motion.img
+          initial={{ scale: 0.7, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeOut' }}
+          className='w-9'
+          src='/porsche.svg'
+          alt='Porsche Logo'
+        />
+        <motion.span initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: 'easeOut' }} className='font-bold'>
+          Porsche
+        </motion.span>
       </a>
 
       {/* Menu Desktop */}
