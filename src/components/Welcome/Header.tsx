@@ -34,22 +34,22 @@ export default function Header() {
       {/* Menu Desktop */}
       <ul className='hidden md:flex list-none gap-10 font-semibold text-md xl:text-lg'>
         <li>
-          <a className='hover:text-neutral-300 duration-200 ease-in-out' href='#home'>
+          <a className='hover:text-neutral-400' href='#home'>
             Home
           </a>
         </li>
         <li>
-          <a className='hover:text-neutral-300 duration-200 ease-in-out' href='#about'>
+          <a className='hover:text-neutral-400' href='#about'>
             About
           </a>
         </li>
         <li>
-          <a className='hover:text-neutral-300 duration-200 ease-in-out' href='#popular'>
+          <a className='hover:text-neutral-400' href='#popular'>
             Popular
           </a>
         </li>
         <li>
-          <a className='hover:text-neutral-300 duration-200 ease-in-out' href='#featured'>
+          <a className='hover:text-neutral-400' href='#featured'>
             Featured
           </a>
         </li>
