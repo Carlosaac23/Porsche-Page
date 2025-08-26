@@ -28,7 +28,7 @@ export default function Home() {
 
       <img className='w-full xl:w-3xl mb-6' src='/home.png' alt='Home Porsche image' />
 
-      <div onClick={handleClick} className='p-4 mb-4 rounded-full hover:bg-neutral-700/15 duration-250 ease-out cursor-pointer'>
+      <div onClick={handleClick} className='p-3 mb-4 rounded-full border border-neutral-800 hover:border-neutral-500 cursor-pointer'>
         <Power color='#fafafa' />
       </div>
 
