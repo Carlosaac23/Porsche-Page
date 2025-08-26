@@ -1,7 +1,7 @@
 import { Fuel, ChevronsUp, Gauge, Power, ArrowBigUpDash } from 'lucide-react';
 import { useState } from 'react';
 import useSound from 'use-sound';
-import porscheSound from '/audio/911-sound.mp3';
+import porscheSound from '/911-sound.mp3';
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
