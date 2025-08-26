@@ -12,7 +12,7 @@ type CardProps = {
 
 export default function Card({ brand, model, img, acceleration, topSpeed, fuelGas, price }: CardProps) {
   return (
-    <div className='max-w-2xs flex flex-col items-center text-center p-5 mb-16 border border-neutral-800 rounded-lg hover:border-neutral-600 cursor-pointer'>
+    <div className='max-w-2xs flex flex-col items-center text-center p-5 mb-16 border border-neutral-800 rounded-lg hover:border-neutral-500 cursor-pointer'>
       <h2 className='font-bold text-lg'>{brand}</h2>
       <h3 className='font-light text-xs text-neutral-400'>{model}</h3>
       <img className='mb-4 hover:translate-x-1.5 duration-200 ease-out' src={img} alt='Imagen del auto' />

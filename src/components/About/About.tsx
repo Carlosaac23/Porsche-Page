@@ -16,7 +16,7 @@ export default function About() {
           acceleration, uncompromising performance, and timeless design, it redefines what it means to drive a sports car. The extraordinary is no longer out of
           reach—it’s right in front of you.
         </p>
-        <a href='#' className='font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-600'>
+        <a href='#' className='font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-500'>
           More information
         </a>
       </div>
