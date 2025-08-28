@@ -26,7 +26,7 @@ export default function Home() {
         <p className='font-semibold text-sm xl:text-md'>Engine Car</p>
       </div>
 
-      <img className='w-full xl:w-3xl mb-6' src='/home.png' alt='Home Porsche image' />
+      <img className='w-full xl:w-3xl mb-6' src='/home.webp' alt='Home Porsche image' />
 
       <div onClick={handleClick} className='p-3 mb-4 rounded-full border border-neutral-800 hover:border-neutral-500 cursor-pointer'>
         <Power color='#fafafa' />
