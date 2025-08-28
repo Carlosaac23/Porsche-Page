@@ -1,15 +1,17 @@
 export default function About() {
   return (
-    <section className='my-30 md:flex justify-around gap-14' id='about'>
+    <section className='my-30 lg:flex justify-around gap-14 3xl:' id='about'>
       <div className='relative w-fit mb-20'>
-        <img className='w-full 2xl:w-2xl h-auto object-cover rounded-lg' src='/interior.webp' alt='Interior Porsche Image' />
+        <img className='w-full 2xl:w-2xl h-auto rounded-lg' src='/interior.webp' alt='Interior Porsche Image' />
 
-        <div className='absolute -right-3 -bottom-5 md:-right-6 md:-bottom-6 p-4 backdrop-blur-xs bg-neutral-500/10 rounded-lg text-center'>
-          <h3 className='font-bold'>1110 Nm</h3>
-          <p className='text-sm font-light'>Up to 1110 Nm</p>
+        <div className='absolute -right-3 -bottom-5 lg:bottom-1 xl:-bottom-6 p-3 backdrop-blur-xs bg-neutral-500/10 rounded-lg text-center'>
+          <h3 className='font-semibold'>
+            1110 <span className='font-normal text-xs'>Nm</span>
+          </h3>
+          <p className='text-neutral-200 text-xs lg:text-sm font-light'>Up to 1110 Nm</p>
         </div>
       </div>
-      <div className='md:w-lg'>
+      <div className='lg:w-lg 3xl:w-3xl'>
         <h2 className='text-lg font-bold mb-6 md:text-xl lg:text-2xl'>Overfeel</h2>
         <p className='text-sm text-neutral-400 font-light text-balance mb-10 md:text-md lg:text-base'>
           The overwhelming thrill of standing before the Porsche 911 Turbo S: a masterpiece where engineering meets pure adrenaline. With breathtaking
