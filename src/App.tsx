@@ -1,5 +1,6 @@
 import About from './components/About/About';
 import CarsSwiper from './components/CarsSwiper/CarsSwiper';
+import Features from './components/Features/Features';
 import Header from './components/Welcome/Header';
 import Home from './components/Welcome/Home';
 
@@ -10,6 +11,7 @@ export default function App() {
       <Home />
       <About />
       <CarsSwiper />
+      <Features />
     </>
   );
 }
