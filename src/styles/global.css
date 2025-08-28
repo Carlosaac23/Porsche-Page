@@ -14,3 +14,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+@theme {
+  --breakpoint-3xl: 120rem;
+}
