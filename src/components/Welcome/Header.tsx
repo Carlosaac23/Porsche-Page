@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,21 +18,23 @@ export default function Header() {
   return (
     <header className='flex justify-between items-center py-8'>
       <a className='flex items-center gap-3' href='#home'>
-        <img className='w-9' src='/porsche.svg' alt='Porsche Logo' />
-        <span className='font-bold'>Porsche</span>
+        <Link to={'/'}>
+          <img className='w-9' src='/porsche.svg' alt='Porsche Logo' />
+          <span className='font-bold'>Porsche</span>
+        </Link>
       </a>
 
       {/* Menu Desktop */}
       <ul className='hidden md:flex list-none gap-10 font-semibold text-md xl:text-lg'>
         <li>
-          <a className='hover:text-neutral-400' href='#home'>
+          <Link className='hover:text-neutral-400' to={'/'}>
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a className='hover:text-neutral-400' href='#about'>
+          <Link className='hover:text-neutral-400' to={'/about'}>
             About
-          </a>
+          </Link>
         </li>
         <li>
           <a className='hover:text-neutral-400' href='#popular'>
@@ -64,14 +67,14 @@ export default function Header() {
 
         <ul className='flex flex-col h-full items-center justify-center gap-14 font-bold text-3xl'>
           <li>
-            <a onClick={() => setIsOpen(false)} href='#home'>
+            <Link onClick={() => setIsOpen(false)} to={'/'}>
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href='#about'>
+            <Link onClick={() => setIsOpen(false)} to={'/about'}>
               About
-            </a>
+            </Link>
           </li>
           <li>
             <a onClick={() => setIsOpen(false)} href='#popular'>
