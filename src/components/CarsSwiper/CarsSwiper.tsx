@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 export default function CarsSwiper() {
   return (
     <section className='my-20' id='popular'>
+      <h2 className='mb-20 font-semibold text-2xl sm:text-4xl text-center'>Choose your car From Porsche brand</h2>
       <Swiper
         style={
           {
@@ -25,7 +26,7 @@ export default function CarsSwiper() {
           600: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
           1536: { slidesPerView: 4 },
-          1700: { slidesPerView: 4 },
+          1920: { slidesPerView: 5 },
         }}
       >
         <SwiperSlide>
