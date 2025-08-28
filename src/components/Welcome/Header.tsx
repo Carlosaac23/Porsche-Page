@@ -17,12 +17,9 @@ export default function Header() {
 
   return (
     <header className='flex justify-between items-center py-8'>
-      <a className='flex items-center gap-3' href='#home'>
-        <Link to={'/'}>
-          <img className='w-9' src='/porsche.svg' alt='Porsche Logo' />
-          <span className='font-bold'>Porsche</span>
-        </Link>
-      </a>
+      <Link to={'/'}>
+        <img className='w-10' src='/porsche.svg' alt='Porsche Logo' />
+      </Link>
 
       {/* Menu Desktop */}
       <ul className='hidden md:flex list-none gap-10 font-semibold text-md xl:text-lg'>
