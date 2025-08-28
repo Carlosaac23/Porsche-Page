@@ -1,17 +1,9 @@
-import About from './components/About/About';
-import CarsSwiper from './components/CarsSwiper/CarsSwiper';
-import Features from './components/Features/Features';
-import Header from './components/Welcome/Header';
-import Home from './components/Welcome/Home';
+import MainPage from './pages/MainPage';
 
 export default function App() {
   return (
     <>
-      <Header />
-      <Home />
-      <About />
-      <CarsSwiper />
-      <Features />
+      <MainPage />
     </>
   );
 }
