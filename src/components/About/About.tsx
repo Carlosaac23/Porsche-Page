@@ -4,7 +4,7 @@ export default function About() {
       <div className='relative w-fit mb-20'>
         <img className='w-full 2xl:w-2xl h-auto rounded-lg' src='/interior.webp' alt='Interior Porsche Image' />
 
-        <div className='absolute -right-3 -bottom-5 lg:bottom-1 xl:-bottom-6 p-3 backdrop-blur-xs bg-neutral-500/10 rounded-lg text-center'>
+        <div className='absolute -right-3 -bottom-5 lg:bottom-1 xl:-bottom-6 p-3 bg-neutral-500/10 backdrop-blur-sm rounded-lg text-center'>
           <h3 className='font-semibold'>
             1110 <span className='font-normal text-xs'>Nm</span>
           </h3>

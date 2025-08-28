@@ -54,7 +54,7 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed top-0 right-0 left-0 bottom-0 bg-neutral-950/50 backdrop-blur-md text-neutral-50 p-5 z-100 md:hidden transform transition-all duration-200 ease-out' ${
+        className={`fixed top-0 right-0 left-0 bottom-0 bg-neutral-950/50 backdrop-blur-sm text-neutral-50 p-5 z-100 md:hidden transform transition-all duration-200 ease-out' ${
           isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
         }`}
       >
