@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Ban } from 'lucide-react';
 import Header from '../components/Welcome/Header';
+import Footer from '../components/Footer/Footer';
 
 export default function NotFoundPage() {
   return (
@@ -24,6 +25,9 @@ export default function NotFoundPage() {
           </div>
         </div>
       </section>
+      <div className='fixed bottom-0 left-0 right-0'>
+        <Footer />
+      </div>
     </>
   );
 }
