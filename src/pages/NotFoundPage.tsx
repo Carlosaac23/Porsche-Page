@@ -17,16 +17,9 @@ export default function NotFoundPage() {
               </span>
             </h2>
           </div>
-
-          <div className='relative'>
-            <img className='w-2xl rounded-lg' src='/features.webp' alt='profile Porsche picture' />
-            <div className='absolute bg-white/30 backdrop-grayscale-200 top-0 right-0 bottom-0 left-0 rounded-lg'></div>
-          </div>
           <div className='text-center'>
             <Link to={'/'}>
-              <button className='mt-5 font-semibold border border-neutral-800 rounded-lg py-3 px-6 hover:border-neutral-500 cursor-pointer'>
-                Go back Home
-              </button>
+              <button className='font-semibold border border-neutral-800 rounded-lg py-3 px-6 hover:border-neutral-500 cursor-pointer'>Go back Home</button>
             </Link>
           </div>
         </div>
