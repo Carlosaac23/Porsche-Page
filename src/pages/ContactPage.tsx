@@ -1,7 +1,13 @@
+import { FormEvent } from 'react';
+import { toast } from 'sonner';
 import Header from '../components/Welcome/Header';
 import Footer from '../components/Footer/Footer';
 
 export default function ContactPage() {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
     <>
       <Header />
@@ -11,7 +17,7 @@ export default function ContactPage() {
             <h1 className='text-2xl font-semibold tracking-tight sm:text-4xl'>Contact Us</h1>
             <p className='mt-4 text-sm text-neutral-400'>Get in touch and we'll get back to you as soon as possible.</p>
 
-            <form className='mt-8 space-y-6'>
+            <form onSubmit={handleSubmit} className='mt-8 space-y-6'>
               <div>
                 <label htmlFor='name' className='block text-sm font-medium'>
                   Name
@@ -53,6 +59,7 @@ export default function ContactPage() {
 
               <button
                 type='submit'
+                onClick={() => toast.success('¡Message successfully sent!')}
                 className='w-full font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-500 cursor-pointer mb-10'
               >
                 Send Message
