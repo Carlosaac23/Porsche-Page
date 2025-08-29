@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function About() {
   return (
     <section className='my-30 lg:flex justify-around gap-14 3xl:' id='about'>
@@ -18,9 +20,9 @@ export default function About() {
           acceleration, uncompromising performance, and timeless design, it redefines what it means to drive a sports car. The extraordinary is no longer out of
           reach—it’s right in front of you.
         </p>
-        <a href='#' className='font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-500'>
+        <Link className='font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-500' to={'/about'}>
           More information
-        </a>
+        </Link>
       </div>
     </section>
   );
