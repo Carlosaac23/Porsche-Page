@@ -22,7 +22,7 @@ export default function Header() {
       </Link>
 
       {/* Menu Desktop */}
-      <ul className='hidden md:flex list-none gap-10 font-semibold text-md xl:text-lg'>
+      <ul className='hidden md:flex list-none gap-10 font-medium text-md xl:text-lg'>
         <li>
           <Link className='hover:text-neutral-400' to={'/'}>
             Home
@@ -34,14 +34,14 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <a className='hover:text-neutral-400' href='#popular'>
-            Popular
-          </a>
+          <Link className='hover:text-neutral-400' to={'#'}>
+            IDK
+          </Link>
         </li>
         <li>
-          <a className='hover:text-neutral-400' href='#featured'>
-            Featured
-          </a>
+          <Link className='hover:text-neutral-400' to={'/contact'}>
+            Contact
+          </Link>
         </li>
       </ul>
 
@@ -62,7 +62,7 @@ export default function Header() {
           <X className='cursor-pointer' size={28} color='#fafafa' />
         </button>
 
-        <ul className='flex flex-col h-full items-center justify-center gap-14 font-bold text-3xl'>
+        <ul className='flex flex-col h-full items-center justify-center gap-14 font-semibold text-3xl'>
           <li>
             <Link onClick={() => setIsOpen(false)} to={'/'}>
               Home
@@ -74,14 +74,14 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href='#popular'>
-              Popular
-            </a>
+            <Link onClick={() => setIsOpen(false)} to={'#'}>
+              IDK
+            </Link>
           </li>
           <li>
-            <a onClick={() => setIsOpen(false)} href='#featured'>
-              Featured
-            </a>
+            <Link onClick={() => setIsOpen(false)} to={'/contact'}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

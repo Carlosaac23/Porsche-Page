@@ -19,14 +19,14 @@ export default function Home() {
 
   return (
     <section className='flex flex-col items-center justify-center mt-10'>
-      <h1 className='text-2xl md:text-3xl xl:text-4xl mb-2 font-bold'>Choose the best car</h1>
+      <h1 className='text-2xl md:text-3xl xl:text-4xl mb-2 font-semibold'>Choose the best car</h1>
       <p className='text-sm xl:text-lg mb-2 text-neutral-400'>Porsche 911 Turbo S</p>
       <div className='flex items-center gap-2 mb-10'>
         <Fuel className='xl:w-5 xl:h-5' size={16} color='#fafafa' />
         <p className='font-semibold text-sm xl:text-md'>Engine Car</p>
       </div>
 
-      <img className='w-full xl:w-3xl mb-6' src='/home.webp' alt='Home Porsche image' />
+      <img className='w-full xl:w-3xl mb-6' src='/profile.webp' alt='Home Porsche image' />
 
       <div onClick={handleClick} className='p-3 mb-4 rounded-full border border-neutral-800 hover:border-neutral-500 cursor-pointer'>
         <Power color='#fafafa' />
