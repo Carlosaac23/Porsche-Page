@@ -1,7 +1,7 @@
 import { FormEvent } from 'react';
 import { toast } from 'sonner';
-import Header from '../components/Welcome/Header';
-import Footer from '../components/Footer/Footer';
+import Header from '@/components/Welcome/Header';
+import Footer from '@/components/Footer/Footer';
 
 export default function ContactPage() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {

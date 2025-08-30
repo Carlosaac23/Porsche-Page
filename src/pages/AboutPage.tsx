@@ -1,16 +1,15 @@
-import Footer from '../components/Footer/Footer';
-import Header from '../components/Welcome/Header';
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Welcome/Header';
+// import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 
 export default function AboutPage() {
   return (
     <>
       <Header />
-      <section>
+      <section className='my-30'>
         <h1 className='text-center text-4xl'>About Page</h1>
       </section>
-      <div className='fixed bottom-0 left-0 right-0'>
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }
