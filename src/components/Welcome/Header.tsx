@@ -34,11 +34,6 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <Link className='hover:text-neutral-400' to={'#'}>
-            IDK
-          </Link>
-        </li>
-        <li>
           <Link className='hover:text-neutral-400' to={'/contact'}>
             Contact
           </Link>
@@ -71,11 +66,6 @@ export default function Header() {
           <li>
             <Link onClick={() => setIsOpen(false)} to={'/about'}>
               About
-            </Link>
-          </li>
-          <li>
-            <Link onClick={() => setIsOpen(false)} to={'#'}>
-              IDK
             </Link>
           </li>
           <li>

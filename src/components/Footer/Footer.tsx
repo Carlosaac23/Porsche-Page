@@ -28,9 +28,6 @@ export default function Footer() {
             <Link className='hover:text-neutral-300' to={'/about'}>
               About
             </Link>
-            <Link className='hover:text-neutral-300' to={'#'}>
-              Cars
-            </Link>
             <Link className='hover:text-neutral-300' to={'/contact'}>
               Contact
             </Link>
