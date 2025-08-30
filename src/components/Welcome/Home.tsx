@@ -1,5 +1,6 @@
 import { Fuel, ChevronsUp, Gauge, Power, ArrowBigUpDash } from 'lucide-react';
 import { useState } from 'react';
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from '@/components/ui/tooltip';
 import useSound from 'use-sound';
 import porscheSound from '/911-sound.mp3';
 
@@ -28,8 +29,17 @@ export default function Home() {
 
       <img className='w-full xl:w-3xl mb-6' src='/profile.webp' alt='Home Porsche image' />
 
-      <div onClick={handleClick} className='p-3 mb-4 rounded-full border border-neutral-800 hover:border-neutral-500 cursor-pointer'>
-        <Power color='#fafafa' />
+      <div onClick={handleClick}>
+        <TooltipProvider>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Power color='#fafafa' />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className=''>Turn it on</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       </div>
 
       <ul className='w-full flex items-center justify-evenly mt-5'>
