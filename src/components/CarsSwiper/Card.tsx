@@ -1,6 +1,6 @@
 import { ChevronsUp, Gauge, Fuel, Zap } from 'lucide-react';
 
-type CardProps = {
+interface CardProps {
   brand: string;
   model: string;
   img: string;
@@ -8,7 +8,7 @@ type CardProps = {
   topSpeed: string;
   fuelGas: string;
   price: string;
-};
+}
 
 export default function Card({ brand, model, img, acceleration, topSpeed, fuelGas, price }: CardProps) {
   return (
