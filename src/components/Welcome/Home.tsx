@@ -29,7 +29,7 @@ export default function Home() {
 
       <img className='w-full xl:w-3xl mb-6' src='/profile.webp' alt='Home Porsche image' />
 
-      <div onClick={handleClick}>
+      <div className='mb-3' onClick={handleClick}>
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
