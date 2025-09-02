@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Balancer from 'react-wrap-balancer';
 
 export default function About() {
   return (
@@ -15,10 +16,12 @@ export default function About() {
       </div>
       <div className='lg:w-lg 3xl:w-3xl'>
         <h2 className='text-lg font-bold mb-6 md:text-xl lg:text-2xl'>Overfeel</h2>
-        <p className='text-sm text-neutral-400 font-light text-balance mb-10 md:text-md lg:text-base'>
-          The overwhelming thrill of standing before the Porsche 911 Turbo S: a masterpiece where engineering meets pure adrenaline. With breathtaking
-          acceleration, uncompromising performance, and timeless design, it redefines what it means to drive a sports car. The extraordinary is no longer out of
-          reach—it’s right in front of you.
+        <p className='text-sm text-neutral-400 font-light mb-10 md:text-md lg:text-base'>
+          <Balancer>
+            The overwhelming thrill of standing before the Porsche 911 Turbo S: a masterpiece where engineering meets pure adrenaline. With breathtaking
+            acceleration, uncompromising performance, and timeless design, it redefines what it means to drive a sports car. The extraordinary is no longer out
+            of reach—it’s right in front of you.
+          </Balancer>
         </p>
         <Link className='font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-500' to={'/about'}>
           More information
