@@ -1,13 +1,16 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import Card from './Card';
+import Balancer from 'react-wrap-balancer';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
 export default function CarsSwiper() {
   return (
     <section className='my-20' id='popular'>
-      <h2 className='mb-20 font-semibold text-2xl sm:text-4xl text-center'>Choose your car From Porsche brand</h2>
+      <h2 className='mb-20 font-semibold text-2xl sm:text-4xl text-center'>
+        <Balancer>Choose your car From Porsche brand</Balancer>
+      </h2>
       <Swiper
         style={
           {
