@@ -112,15 +112,6 @@ Key files and tools:
 
 ---
 
-## Future Enhancements
-
-- Add a **/about** section with dynamic content and visual split layouts
-- Implement **animations** (e.g., scroll reveals, hover transitions)
-- Add **SEO optimization** and **meta tags**
-- Support for **internationalization** (i18n) and dark mode
-
----
-
 ## Contribution
 
 Contributions are welcome! Feel free to:
