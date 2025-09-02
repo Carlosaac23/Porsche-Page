@@ -7,11 +7,11 @@ export default function NotFoundPage() {
   return (
     <>
       <Header />
-      <section className='flex justify-center items-center'>
-        <div className='p-10 mt-10'>
+      <section className='flex items-center justify-center'>
+        <div className='mt-10 p-10'>
           <h1 className='text-center text-3xl font-bold'>404</h1>
           <div className='flex justify-center'>
-            <h2 className='inline-flex items-center gap-2 mb-6 text-2x'>
+            <h2 className='text-2x mb-6 inline-flex items-center gap-2'>
               Not Found Page{' '}
               <span>
                 <Ban size={28} color='#fb2c36' />
@@ -20,12 +20,14 @@ export default function NotFoundPage() {
           </div>
           <div className='text-center'>
             <Link to={'/'}>
-              <button className='font-semibold border border-neutral-800 rounded-lg py-3 px-6 hover:border-neutral-500 cursor-pointer'>Go back Home</button>
+              <button className='cursor-pointer rounded-lg border border-neutral-800 px-6 py-3 font-semibold hover:border-neutral-500'>
+                Go back Home
+              </button>
             </Link>
           </div>
         </div>
       </section>
-      <div className='fixed bottom-0 left-0 right-0'>
+      <div className='fixed right-0 bottom-0 left-0'>
         <Footer />
       </div>
     </>

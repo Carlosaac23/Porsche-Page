@@ -31,5 +31,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       />
       <Analytics />
     </main>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

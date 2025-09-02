@@ -10,13 +10,25 @@ interface CardProps {
   price: string;
 }
 
-export default function Card({ brand, model, img, acceleration, topSpeed, fuelGas, price }: CardProps) {
+export default function Card({
+  brand,
+  model,
+  img,
+  acceleration,
+  topSpeed,
+  fuelGas,
+  price,
+}: CardProps) {
   return (
-    <div className='max-w-2xs flex flex-col items-center text-center p-5 mb-16 border border-neutral-800 rounded-lg hover:border-neutral-500 cursor-pointer'>
-      <h2 className='font-bold text-lg'>{brand}</h2>
-      <h3 className='font-light text-xs text-neutral-400'>{model}</h3>
-      <img className='mb-4 hover:translate-x-1.5 duration-200 ease-out' src={img} alt='Imagen del auto' />
-      <ul className='flex justify-center gap-3 mb-2'>
+    <div className='mb-16 flex max-w-2xs cursor-pointer flex-col items-center rounded-lg border border-neutral-800 p-5 text-center hover:border-neutral-500'>
+      <h2 className='text-lg font-bold'>{brand}</h2>
+      <h3 className='text-xs font-light text-neutral-400'>{model}</h3>
+      <img
+        className='mb-4 duration-200 ease-out hover:translate-x-1.5'
+        src={img}
+        alt='Imagen del auto'
+      />
+      <ul className='mb-2 flex justify-center gap-3'>
         <li className='flex items-center gap-1'>
           <span className='text-xs'>{acceleration} s</span>
           <ChevronsUp size={14} color='#fafafa' />

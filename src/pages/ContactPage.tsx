@@ -14,8 +14,12 @@ export default function ContactPage() {
       <main className='flex-1'>
         <div className='mx-auto max-w-7xl px-6 py-10 sm:py-16 lg:px-8'>
           <div className='mx-auto max-w-xl'>
-            <h1 className='text-2xl font-semibold tracking-tight sm:text-4xl'>Contact Us</h1>
-            <p className='mt-4 text-sm text-neutral-400'>Get in touch and we'll get back to you as soon as possible.</p>
+            <h1 className='text-2xl font-semibold tracking-tight sm:text-4xl'>
+              Contact Us
+            </h1>
+            <p className='mt-4 text-sm text-neutral-400'>
+              Get in touch and we'll get back to you as soon as possible.
+            </p>
 
             <form onSubmit={handleSubmit} className='mt-8 space-y-6'>
               <div>
@@ -26,7 +30,7 @@ export default function ContactPage() {
                   type='text'
                   id='name'
                   name='name'
-                  className='text-sm mt-2 block w-full rounded-lg border bg-neutral-900 border-neutral-800 px-3 py-2 placeholder-neutral-400 focus:border-neutral-500 focus:outline-none'
+                  className='mt-2 block w-full rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2 text-sm placeholder-neutral-400 focus:border-neutral-500 focus:outline-none'
                   placeholder='John Doe'
                 />
               </div>
@@ -39,7 +43,7 @@ export default function ContactPage() {
                   type='email'
                   id='email'
                   name='email'
-                  className='text-sm mt-2 block w-full rounded-lg bg-neutral-900 border border-neutral-800 px-3 py-2 placeholder-neutral-400 focus:border-neutral-500 focus:outline-none'
+                  className='mt-2 block w-full rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2 text-sm placeholder-neutral-400 focus:border-neutral-500 focus:outline-none'
                   placeholder='johndoe@email.com'
                 />
               </div>
@@ -52,7 +56,7 @@ export default function ContactPage() {
                   id='message'
                   name='message'
                   rows={6}
-                  className='text-sm mt-2 block w-full rounded-lg border bg-neutral-900 border-neutral-800 px-3 py-2 placeholder-neutral-400 focus:border-neutral-500 focus:outline-none resize-none'
+                  className='mt-2 block w-full resize-none rounded-lg border border-neutral-800 bg-neutral-900 px-3 py-2 text-sm placeholder-neutral-400 focus:border-neutral-500 focus:outline-none'
                   placeholder='I want to buy a new Porsche'
                 />
               </div>
@@ -60,7 +64,7 @@ export default function ContactPage() {
               <button
                 type='submit'
                 onClick={() => toast.success('¡Message successfully sent!')}
-                className='w-full font-semibold text-sm border border-neutral-800 py-4 px-7 rounded-lg hover:border-neutral-500 cursor-pointer mb-10'
+                className='mb-10 w-full cursor-pointer rounded-lg border border-neutral-800 px-7 py-4 text-sm font-semibold hover:border-neutral-500'
               >
                 Send Message
               </button>
@@ -68,7 +72,7 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-      <div className='fixed bottom-0 left-0 right-0'>
+      <div className='fixed right-0 bottom-0 left-0'>
         <Footer />
       </div>
     </>

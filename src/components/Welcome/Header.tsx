@@ -8,7 +8,9 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
-    isOpen ? (document.body.style.overflow = 'hidden') : (document.body.style.overflow = '');
+    isOpen
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = '');
 
     return () => {
       document.body.style.overflow = '';
@@ -16,13 +18,13 @@ export default function Header() {
   }, [isOpen]);
 
   return (
-    <header className='flex justify-between items-center py-8'>
+    <header className='flex items-center justify-between py-8'>
       <Link to={'/'}>
         <img className='w-10' src='/porsche.svg' alt='Porsche Logo' />
       </Link>
 
       {/* Menu Desktop */}
-      <ul className='hidden md:flex list-none gap-10 font-medium text-md xl:text-lg'>
+      <ul className='text-md hidden list-none gap-10 font-medium md:flex xl:text-lg'>
         <li>
           <Link className='hover:text-neutral-400' to={'/'}>
             Home
@@ -42,22 +44,32 @@ export default function Header() {
 
       {/* Mobile menu button */}
       {!isOpen && (
-        <button className='md:hidden' onClick={toggleMenu} aria-label='toggle-menu'>
+        <button
+          className='md:hidden'
+          onClick={toggleMenu}
+          aria-label='toggle-menu'
+        >
           <Menu className='cursor-pointer' size={28} color='#fafafa' />
         </button>
       )}
 
       {/* Mobile menu */}
       <div
-        className={`fixed top-0 right-0 left-0 bottom-0 bg-neutral-950/50 backdrop-blur-sm text-neutral-50 p-5 z-100 md:hidden transform transition-all duration-200 ease-out' ${
-          isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full pointer-events-none'
+        className={`ease-out' fixed top-0 right-0 bottom-0 left-0 z-100 transform bg-neutral-950/50 p-5 text-neutral-50 backdrop-blur-sm transition-all duration-200 md:hidden ${
+          isOpen
+            ? 'translate-x-0 opacity-100'
+            : 'pointer-events-none translate-x-full opacity-0'
         }`}
       >
-        <button className='absolute top-8 right-8' onClick={toggleMenu} aria-label='close-menu'>
+        <button
+          className='absolute top-8 right-8'
+          onClick={toggleMenu}
+          aria-label='close-menu'
+        >
           <X className='cursor-pointer' size={28} color='#fafafa' />
         </button>
 
-        <ul className='flex flex-col h-full items-center justify-center gap-14 font-semibold text-3xl'>
+        <ul className='flex h-full flex-col items-center justify-center gap-14 text-3xl font-semibold'>
           <li>
             <Link onClick={() => setIsOpen(false)} to={'/'}>
               Home
