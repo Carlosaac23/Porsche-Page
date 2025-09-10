@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Ban } from 'lucide-react';
-import Header from '@/components/Welcome/Header';
-import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function NotFoundPage() {
   return (

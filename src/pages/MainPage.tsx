@@ -1,11 +1,11 @@
-import Header from '@/components/Welcome/Header';
-import About from '@/components/About/About';
-import CarsSwiper from '@/components/CarsSwiper/CarsSwiper';
-import Features from '@/components/Features/Features';
-import Home from '@/components/Welcome/Home';
+import Header from '@/components/Header';
+import About from '@/components/About';
+import CarsSwiper from '@/components/CarsSwiper';
+import Features from '@/components/Features';
+import Home from '@/components/Home';
 import ScrollToTopButton from '@/components/ScrollUp';
-import Offers from '@/components/Subscribe/Subscribe';
-import Footer from '@/components/Footer/Footer';
+import Offers from '@/components/Subscribe';
+import Footer from '@/components/Footer';
 
 export default function MainPage() {
   return (

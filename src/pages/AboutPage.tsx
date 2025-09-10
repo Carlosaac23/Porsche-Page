@@ -1,6 +1,6 @@
-import Footer from '@/components/Footer/Footer';
+import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollUp';
-import Header from '@/components/Welcome/Header';
+import Header from '@/components/Header';
 import Balancer from 'react-wrap-balancer';
 
 export default function AboutPage() {
