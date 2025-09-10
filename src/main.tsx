@@ -3,11 +3,11 @@ import { Toaster } from 'sonner';
 import { Analytics } from '@vercel/analytics/react';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import NotFoundPage from './pages/NotFoundPage';
-import './styles/global.css';
+import App from '@/App';
+import AboutPage from '@/pages/AboutPage';
+import ContactPage from '@/pages/ContactPage';
+import NotFoundPage from '@/pages/NotFoundPage';
+import '@/styles/global.css';
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
