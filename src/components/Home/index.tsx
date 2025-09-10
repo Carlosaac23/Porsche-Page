@@ -42,7 +42,7 @@ export default function Home() {
         alt='Home Porsche image'
       />
 
-      <div className='mb-3' onClick={handleClick}>
+      <div className='mb-3 hover:cursor-pointer' onClick={handleClick}>
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>
