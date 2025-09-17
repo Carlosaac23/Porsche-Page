@@ -7,7 +7,7 @@ import App from '@/App';
 import AboutPage from '@/pages/AboutPage';
 import ContactPage from '@/pages/ContactPage';
 import NotFoundPage from '@/pages/NotFoundPage';
-import '@/styles/global.css';
+import '@/global.css';
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
