@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import Card from '../Card';
+import Card from './Card';
 import Balancer from 'react-wrap-balancer';
 import 'swiper/css';
 import 'swiper/css/pagination';
