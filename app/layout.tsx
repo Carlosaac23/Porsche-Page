@@ -1,7 +1,8 @@
 import { Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
-import type { Metadata } from 'next';
 import { ViewTransition } from 'react';
+import { Analytics } from '@vercel/analytics/next';
+import type { Metadata } from 'next';
 import Head from 'next/head';
 import './globals.css';
 
@@ -38,6 +39,7 @@ export default function RootLayout({
             }}
           />
           {children}
+          <Analytics />
         </body>
       </ViewTransition>
     </html>
