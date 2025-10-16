@@ -10,14 +10,14 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <>
-      {/* <ScrollTopButton /> */}
+      <ScrollTopButton />
       <Header />
-      {/* <Hero />
+      <Hero />
       <About />
       <CarsSwiper />
       <Features />
       <Offers />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
