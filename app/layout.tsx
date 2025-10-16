@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
 import type { Metadata } from 'next';
 import { ViewTransition } from 'react';
+import Head from 'next/head';
 import './globals.css';
 
 const interSans = Inter({
@@ -20,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <Head>
+        <link rel='icon' href='./icon.svg' type='image/svg+xml' />
+      </Head>
       <ViewTransition>
         <body
           className={`${interSans.className} px-8 antialiased sm:px-12 md:px-20 lg:px-22 xl:px-28 2xl:px-40`}
