@@ -1,15 +1,15 @@
 'use client';
 
-import { ArrowBigUpDash, ChevronsUp, Fuel, Gauge, Power } from 'lucide-react';
-import { useState } from 'react';
-import useSound from 'use-sound';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { ArrowBigUpDash, ChevronsUp, Fuel, Gauge, Power } from 'lucide-react';
 import Image from 'next/image';
+import { useState } from 'react';
+import useSound from 'use-sound';
 
 export default function Hero() {
   const [isPlaying, setIsPlaying] = useState(false);

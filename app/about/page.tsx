@@ -1,8 +1,8 @@
-import Balancer from 'react-wrap-balancer';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ScrollToTopButton from '@/components/ScrollUp';
 import Image from 'next/image';
+import Balancer from 'react-wrap-balancer';
 
 export default function AboutPage() {
   return (

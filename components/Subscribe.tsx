@@ -1,7 +1,7 @@
 'use client';
 
-import Balancer from 'react-wrap-balancer';
 import Image from 'next/image';
+import Balancer from 'react-wrap-balancer';
 import { toast } from 'sonner';
 
 export default function Offers() {

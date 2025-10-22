@@ -1,9 +1,9 @@
 'use client';
 
-import type { FormEvent } from 'react';
-import { toast } from 'sonner';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import type { FormEvent } from 'react';
+import { toast } from 'sonner';
 
 export default function ContactPage() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {

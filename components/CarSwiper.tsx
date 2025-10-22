@@ -2,11 +2,11 @@
 
 import { useId } from 'react';
 import Balancer from 'react-wrap-balancer';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Card from './Card';
-import 'swiper/css';
-import 'swiper/css/pagination';
 
 export default function CarsSwiper() {
   const id = useId();

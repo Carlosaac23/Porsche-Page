@@ -1,8 +1,8 @@
 'use client';
 
-import { useId } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useId } from 'react';
 import Balancer from 'react-wrap-balancer';
 
 export default function About() {

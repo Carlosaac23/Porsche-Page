@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google';
-import { Toaster } from 'sonner';
-import { ViewTransition } from 'react';
 import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 import Head from 'next/head';
+import { ViewTransition } from 'react';
+import { Toaster } from 'sonner';
 import './globals.css';
 
 const interSans = Inter({
