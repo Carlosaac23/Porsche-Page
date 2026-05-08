@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useId } from 'react';
-import Balancer from 'react-wrap-balancer';
 
 export default function About() {
   const id = useId();
@@ -26,12 +25,10 @@ export default function About() {
       <div className='lg:w-lg 3xl:w-3xl'>
         <h2 className='mb-6 text-lg font-bold md:text-xl lg:text-2xl'>Overfeel</h2>
         <p className='md:text-md mb-10 text-sm font-light text-neutral-400 lg:text-base'>
-          <Balancer>
-            The overwhelming thrill of standing before the Porsche 911 Turbo S: a masterpiece where
-            engineering meets pure adrenaline. With breathtaking acceleration, uncompromising
-            performance, and timeless design, it redefines what it means to drive a sports car. The
-            extraordinary is no longer out of reach—it’s right in front of you.
-          </Balancer>
+          The overwhelming thrill of standing before the Porsche 911 Turbo S: a masterpiece where
+          engineering meets pure adrenaline. With breathtaking acceleration, uncompromising
+          performance, and timeless design, it redefines what it means to drive a sports car. The
+          extraordinary is no longer out of reach—it’s right in front of you.
         </p>
         <Link
           className='rounded-lg border border-neutral-800 px-7 py-4 text-sm font-semibold hover:border-neutral-500'
