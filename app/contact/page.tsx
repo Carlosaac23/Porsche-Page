@@ -1,14 +1,13 @@
-import type { FormEvent } from 'react';
+'use client';
 
 import { toast } from 'sonner';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import { useForm } from '@/hooks/useForm';
 
 export default function ContactPage() {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-  };
+  const { handleSubmit } = useForm();
 
   return (
     <>

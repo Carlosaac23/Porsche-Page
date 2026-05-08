@@ -1,25 +1,9 @@
 import { ChevronsUp, Fuel, Gauge, Zap } from 'lucide-react';
 import Image from 'next/image';
 
-interface CardProps {
-  brand: string;
-  model: string;
-  img: string;
-  acceleration: string;
-  topSpeed: string;
-  fuelGas: string;
-  price: string;
-}
+import type { Car } from '@/types/car';
 
-export default function Card({
-  brand,
-  model,
-  img,
-  acceleration,
-  topSpeed,
-  fuelGas,
-  price,
-}: CardProps) {
+export default function Card({ brand, model, img, acceleration, topSpeed, fuelGas, price }: Car) {
   return (
     <div className='mb-16 flex max-w-2xs cursor-pointer flex-col items-center rounded-lg border border-neutral-800 p-5 text-center hover:border-neutral-500'>
       <h2 className='text-lg font-bold'>{brand}</h2>
