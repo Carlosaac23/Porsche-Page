@@ -1,11 +1,10 @@
-'use client';
-
 import { useId } from 'react';
 import Balancer from 'react-wrap-balancer';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 import Card from './Card';
 
 export default function CarsSwiper() {

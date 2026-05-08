@@ -1,9 +1,9 @@
-'use client';
+import type { FormEvent } from 'react';
+
+import { toast } from 'sonner';
 
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
-import type { FormEvent } from 'react';
-import { toast } from 'sonner';
 
 export default function ContactPage() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -16,9 +16,7 @@ export default function ContactPage() {
       <main className='flex-1'>
         <div className='mx-auto max-w-7xl px-6 py-10 sm:py-16 lg:px-8'>
           <div className='mx-auto max-w-xl'>
-            <h1 className='text-2xl font-semibold tracking-tight sm:text-4xl'>
-              Contact Us
-            </h1>
+            <h1 className='text-2xl font-semibold tracking-tight sm:text-4xl'>Contact Us</h1>
             <p className='mt-4 text-sm text-neutral-400'>
               Get in touch and we&apos;ll get back to you as soon as possible.
             </p>

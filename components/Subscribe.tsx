@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
 import { toast } from 'sonner';
@@ -9,13 +7,13 @@ export default function Offers() {
     <section className='my-30'>
       <div className='md:flex md:items-center md:justify-around'>
         <div>
-          <h2 className='3xl:text-4xl mb-6 text-center text-lg font-bold sm:text-xl xl:text-2xl'>
+          <h2 className='mb-6 text-center text-lg font-bold sm:text-xl xl:text-2xl 3xl:text-4xl'>
             <Balancer>Do you want to receive special offers?</Balancer>
           </h2>
-          <p className='3xl:text-base mb-8 text-center text-sm font-light text-neutral-400'>
+          <p className='mb-8 text-center text-sm font-light text-neutral-400 3xl:text-base'>
             <Balancer>
-              Be the first to receive all the information about our products and
-              new cars by email by subscribing to our list of mail.
+              Be the first to receive all the information about our products and new cars by email
+              by subscribing to our list of mail.
             </Balancer>
           </p>
           <button

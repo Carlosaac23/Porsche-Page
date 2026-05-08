@@ -1,15 +1,9 @@
-'use client';
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
 import { ArrowBigUpDash, ChevronsUp, Fuel, Gauge, Power } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 import useSound from 'use-sound';
+
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 export default function Hero() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -29,12 +23,8 @@ export default function Hero() {
 
   return (
     <section className='mt-10 flex flex-col items-center justify-center'>
-      <h1 className='mb-2 text-2xl font-semibold md:text-3xl xl:text-4xl'>
-        Choose the best car
-      </h1>
-      <p className='mb-2 text-sm text-neutral-400 xl:text-lg'>
-        Porsche 911 Turbo S
-      </p>
+      <h1 className='mb-2 text-2xl font-semibold md:text-3xl xl:text-4xl'>Choose the best car</h1>
+      <p className='mb-2 text-sm text-neutral-400 xl:text-lg'>Porsche 911 Turbo S</p>
       <div className='mb-10 flex items-center gap-2'>
         <Fuel className='xl:h-5 xl:w-5' size={16} color='#fafafa' />
         <p className='xl:text-md text-sm font-semibold'>Engine Car</p>
@@ -48,11 +38,7 @@ export default function Hero() {
         alt='Home Porsche'
       />
 
-      <button
-        type='button'
-        className='mb-3 hover:cursor-pointer'
-        onClick={handleClick}
-      >
+      <button type='button' className='mb-3 hover:cursor-pointer' onClick={handleClick}>
         <TooltipProvider>
           <Tooltip>
             <TooltipTrigger asChild>

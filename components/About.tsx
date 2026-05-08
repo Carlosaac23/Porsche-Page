@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { useId } from 'react';
@@ -22,21 +20,16 @@ export default function About() {
           <h3 className='font-semibold'>
             1110 <span className='text-xs font-normal'>Nm</span>
           </h3>
-          <p className='text-xs font-light text-neutral-200 lg:text-sm'>
-            Up to 1110 Nm
-          </p>
+          <p className='text-xs font-light text-neutral-200 lg:text-sm'>Up to 1110 Nm</p>
         </div>
       </div>
-      <div className='3xl:w-3xl lg:w-lg'>
-        <h2 className='mb-6 text-lg font-bold md:text-xl lg:text-2xl'>
-          Overfeel
-        </h2>
+      <div className='lg:w-lg 3xl:w-3xl'>
+        <h2 className='mb-6 text-lg font-bold md:text-xl lg:text-2xl'>Overfeel</h2>
         <p className='md:text-md mb-10 text-sm font-light text-neutral-400 lg:text-base'>
           <Balancer>
-            The overwhelming thrill of standing before the Porsche 911 Turbo S:
-            a masterpiece where engineering meets pure adrenaline. With
-            breathtaking acceleration, uncompromising performance, and timeless
-            design, it redefines what it means to drive a sports car. The
+            The overwhelming thrill of standing before the Porsche 911 Turbo S: a masterpiece where
+            engineering meets pure adrenaline. With breathtaking acceleration, uncompromising
+            performance, and timeless design, it redefines what it means to drive a sports car. The
             extraordinary is no longer out of reach—it’s right in front of you.
           </Balancer>
         </p>

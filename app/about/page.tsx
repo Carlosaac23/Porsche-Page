@@ -1,8 +1,9 @@
+import Image from 'next/image';
+import Balancer from 'react-wrap-balancer';
+
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ScrollToTopButton from '@/components/ScrollUp';
-import Image from 'next/image';
-import Balancer from 'react-wrap-balancer';
 
 export default function AboutPage() {
   return (
@@ -23,13 +24,12 @@ export default function AboutPage() {
           />
           <p className='text-sm font-light text-neutral-400 xl:text-lg'>
             <Balancer>
-              The Porsche 911 Turbo S represents the pinnacle of precision
-              engineering and timeless design, standing as one of the most
-              accomplished sports cars ever built. Every detail has been
-              carefully crafted to deliver an extraordinary balance between
-              everyday usability and breathtaking performance. Its unmistakable
-              silhouette reflects over five decades of Porsche heritage, refined
-              through continuous evolution while remaining true to its roots.
+              The Porsche 911 Turbo S represents the pinnacle of precision engineering and timeless
+              design, standing as one of the most accomplished sports cars ever built. Every detail
+              has been carefully crafted to deliver an extraordinary balance between everyday
+              usability and breathtaking performance. Its unmistakable silhouette reflects over five
+              decades of Porsche heritage, refined through continuous evolution while remaining true
+              to its roots.
             </Balancer>
           </p>
         </section>
@@ -47,11 +47,10 @@ export default function AboutPage() {
           />
           <p className='mt-5 text-right text-sm font-light text-neutral-400 xl:text-lg'>
             <Balancer>
-              At the heart of the 911 Turbo S lies a 3.8-liter,
-              twin-turbocharged flat-six engine, producing 640 horsepower and
-              590 lb-ft of torque. Accelerating from 0 to 60 mph in just 2.6
-              seconds, it sets the benchmark for supercar performance while
-              maintaining everyday drivability.
+              At the heart of the 911 Turbo S lies a 3.8-liter, twin-turbocharged flat-six engine,
+              producing 640 horsepower and 590 lb-ft of torque. Accelerating from 0 to 60 mph in
+              just 2.6 seconds, it sets the benchmark for supercar performance while maintaining
+              everyday drivability.
             </Balancer>
           </p>
         </section>
@@ -94,12 +93,10 @@ export default function AboutPage() {
           </div>
           <p className='mt-5 text-sm font-light text-neutral-400 xl:text-lg'>
             <Balancer>
-              The 911 Turbo S combines iconic Porsche styling with modern
-              aerodynamic refinements. Wide rear fenders, an adaptive spoiler,
-              and striking LED lighting give it an unmistakable presence on the
-              road. Inside, luxurious leather, carbon fiber accents, and
-              advanced digital displays create a cockpit designed for both
-              comfort and control.
+              The 911 Turbo S combines iconic Porsche styling with modern aerodynamic refinements.
+              Wide rear fenders, an adaptive spoiler, and striking LED lighting give it an
+              unmistakable presence on the road. Inside, luxurious leather, carbon fiber accents,
+              and advanced digital displays create a cockpit designed for both comfort and control.
             </Balancer>
           </p>
         </section>
@@ -117,10 +114,9 @@ export default function AboutPage() {
           />
           <p className='mt-5 text-right text-sm font-light text-neutral-400 xl:text-lg'>
             <Balancer>
-              For decades, the Porsche 911 has defined the sports car segment.
-              The Turbo S stands at the peak of this evolution, carrying forward
-              a tradition of innovation, performance, and timeless design.
-              Owning a 911 Turbo S is not just about driving a car — it’s about
+              For decades, the Porsche 911 has defined the sports car segment. The Turbo S stands at
+              the peak of this evolution, carrying forward a tradition of innovation, performance,
+              and timeless design. Owning a 911 Turbo S is not just about driving a car — it’s about
               being part of a legacy.
             </Balancer>
           </p>

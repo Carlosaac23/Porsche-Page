@@ -1,5 +1,3 @@
-'use client';
-
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -25,13 +23,7 @@ export default function Header() {
   return (
     <header className='flex items-center justify-between py-8'>
       <Link href='/'>
-        <Image
-          className='w-10'
-          width={10}
-          height={10}
-          src='/porsche.svg'
-          alt='Porsche Logo'
-        />
+        <Image className='w-10' width={10} height={10} src='/porsche.svg' alt='Porsche Logo' />
       </Link>
 
       {/* Menu Desktop */}
@@ -55,12 +47,7 @@ export default function Header() {
 
       {/* Mobile menu button */}
       {!isOpen && (
-        <button
-          type='button'
-          className='md:hidden'
-          onClick={toggleMenu}
-          aria-label='toggle-menu'
-        >
+        <button type='button' className='md:hidden' onClick={toggleMenu} aria-label='toggle-menu'>
           <Menu className='cursor-pointer' size={28} color='#fafafa' />
         </button>
       )}
@@ -68,9 +55,7 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         className={`ease-out' fixed top-0 right-0 bottom-0 left-0 z-100 transform bg-neutral-950/50 p-5 text-neutral-50 backdrop-blur-sm transition-all duration-200 md:hidden ${
-          isOpen
-            ? 'translate-x-0 opacity-100'
-            : 'pointer-events-none translate-x-full opacity-0'
+          isOpen ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-full opacity-0'
         }`}
       >
         <button

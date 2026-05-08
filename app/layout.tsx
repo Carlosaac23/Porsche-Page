@@ -1,9 +1,11 @@
-import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from 'next';
+
+import { Analytics } from '@vercel/analytics/next';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import { ViewTransition } from 'react';
 import { Toaster } from 'sonner';
+
 import './globals.css';
 
 const interSans = Inter({
